@@ -72,15 +72,18 @@ body {
     font-weight: 500;
     margin-right: 3.5rem;
 }
-@media (max-width: 450px) {
-    .teste2 img {
-        width: 50%;
-        height: 250px;
-    }
-}
-.teste2 img{
+
+.img-hands-xl {
     width: 100%;
-    height: 500px;
+    margin-bottom: 20px;
+}
+.img-hands-md {
+    display: none;
+    width: 100%;
+}
+.img-hands-sm {
+    display: none;
+    width: 100%;
 }
 
 .about-content2 h2 {
@@ -115,6 +118,7 @@ body {
     height: .2rem;
     background:#006633;
 }
+
 
 .header.sticky .navbar a::before {
     background: #006633;
@@ -382,7 +386,6 @@ span {
     font-size: 4.5rem;
     text-align: left;
 }
-
 
 .about-content h2 {
     text-align: left;
@@ -799,7 +802,7 @@ span {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 973px) {
     #menu-icon {
         display: block;
     }
@@ -852,6 +855,17 @@ span {
         padding: 0 3% 23rem;
         justify-content: center;
         text-align: center;
+    }
+    .mySwiper {
+        max-width: 90%;
+        margin:0 auto;
+    }
+
+    @media (max-width: 570px) {
+        .mySwiper {
+            max-width: 99%;
+            margin:0 auto;
+        }
     }
 
     .home-content h3 {
@@ -914,11 +928,11 @@ span {
 
     .home .profession-container .overlay {
         position: fixed;
-        top: 70rem;
+        top: 85rem;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
-        border-width: 23.9rem;
+        border-width: 30.9rem;
     }
 
     .about {
@@ -952,6 +966,17 @@ span {
 @media (max-width: 580px) {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 925px) {
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hireMe {
+        width: 100%;
     }
 }
 

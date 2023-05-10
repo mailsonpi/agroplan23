@@ -16,6 +16,11 @@ li {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 925px) {
+  .card{
+    height: 450px;
+  }
+}
 .card::before{
   content: "";
   position: absolute;
